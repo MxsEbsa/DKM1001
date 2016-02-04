@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lib/hover-min.css">
+</head>
+<body>
+
+<!-- HTML DO OED AQUI -->
+<div class="OED">
+
+  <div class="noClick"></div>
+
+  <div class="game">
+
+    <img src="img/nuvens.png" alt="" class="nuvens nuvens-animation">
+
+    <div class="popup">
+      <div class="content">
+        <img src="img/salva_vidas_popup.png">
+        <p>ARRASTE A PALAVRA ATÉ A IMAGEM CORRESPONDENTE.</p>
+        <div class="close hvr-skew-backward">
+          <h1>FECHAR</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="feedback">
+      <div class="salvaVidasGame">
+        <div class="parabens">
+          <p>PARABÉNS! CONTINUE O DESAFIO.</p>
+        </div>
+
+        <div class="avancarGame">
+          <a href="#" class="nextGame2">Avançar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tela1">
+
+      <img src="img/pracha_maior.png" alt="" class="objeto1 drop prancha" data-resposta="objeto1">
+      <img src="img/pracha_menor.png" alt="" class="objeto2 drop prancha" data-resposta="objeto2">
+
+      <ul class="botoes">
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto1">MAIOR</li>
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto2">MENOR</li>
+      </ul>
+
+    </div>
+
+    <div class="tela2">
+
+      <img src="img/standUp_perto.png" alt="" class="objeto1 drop homemSurfando" data-resposta="objeto1">
+      <img src="img/standUp_longe.png" alt="" class="objeto2 drop homemSurfando" data-resposta="objeto2">
+
+      <ul class="botoes">
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto1">PERTO</li>
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto2">LONGE</li>
+      </ul>
+
+    </div>
+
+    <div class="tela3">
+
+      <img src="img/comprido.png" alt="" class="objeto1 drop coqueiroComprido" data-resposta="objeto1">
+      <img src="img/curto.png" alt="" class="objeto2 drop coqueiroCurto" data-resposta="objeto2">
+
+      <ul class="botoes">
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto1">COMPRIDO</li>
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto2">CURTO</li>
+      </ul>
+
+    </div>
+
+    <div class="tela4">
+
+      <img src="img/emCima.png" alt="" class="objeto1 drop salvaVidasEmCima" data-resposta="objeto1">
+      <img src="img/emBaixo.png" alt="" class="objeto2 drop salvaVidasEmBaixo" data-resposta="objeto2">
+
+      <ul class="botoes">
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto2">EMBAIXO</li>
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto1">EM CIMA</li>
+      </ul>
+
+    </div>
+
+    <div class="tela5">
+
+      <img src="img/crianca_direita.png" alt="" class="objeto1 drop criancaDireita" data-resposta="objeto1">
+      <img src="img/crianca_esquerda.png" alt="" class="objeto2 drop criancaEsquerda" data-resposta="objeto2">
+
+      <ul class="botoes">
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto1">ESQUERDA</li>
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto2">DIREITA</li>
+      </ul>
+
+    </div>
+
+    <div class="tela6">
+
+      <img src="img/bandeira_fina.png" alt="" class="objeto1 drop bandeiraFina" data-resposta="objeto1">
+      <img src="img/bandeira_grosso.png" alt="" class="objeto2 drop bandeiraGrosso" data-resposta="objeto2">
+
+      <ul class="botoes">
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto2">GROSSO</li>
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto1">FINO</li>
+      </ul>
+
+    </div>
+
+    <div class="tela7">
+
+      <img src="img/carrinho.png" alt="" class="objeto1 drop carrinho" data-resposta="objeto1">
+      <img src="img/castelo_esquerdo.png" alt="" class="objeto2 drop casteloEsquerdo" data-resposta="objeto2">
+      <img src="img/castelo_direita.png" alt="" class="objeto3 drop casteloDireito" data-resposta="objeto2">
+      <img src="img/carrinho.png" alt="" class="objeto4 drop carrinho" data-resposta="objeto1">
+
+      <ul class="botoes">
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto1">IGUAL</li>
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto1">IGUAL</li>
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto2">DIFERENTE</li>
+        <li class="drag hvr-pulse-shrink" data-resposta="objeto2">DIFERENTE</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- HTML DO OED AQUI -->
+
+
+	<!-- CARREGAMENTO DE SCRIPTS -->
+	<script>
+		function iniciar_oed_frame(){
+			iniciar_com_tap();
+		}	
+	</script>
+	<script type="text/javascript" src="../js/carrega_oed.js"></script>
+	<script type="text/javascript" src="js/funcoes.js"></script>
+</body>
+</html>
